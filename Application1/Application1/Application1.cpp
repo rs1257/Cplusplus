@@ -1,22 +1,34 @@
-// Application1.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
-#include "FileUtils.h"
-#include "FolderUtils.h"
-#include "RegistryUtils.h"
+//#include "FileUtils.h"
+//#include "FolderUtils.h"
+//#include "RegistryUtils.h"
 #include "ResourceUtils.h"
 
 #include <iostream>
+#include <windows.h>
 
 void selectFunction(int choice) {
 	switch (choice) {
 	case 1:
+		std::cout << "File Options" << "\n";
 		break;
 	case 2:
-		std::cout << 2;
+		std::cout << "Folder Options" << "\n";
+		break;
+	case 3:
+		std::cout << "Registry Options" << "\n";
+		break;
+	case 4:
+		std::cout << "Resource Options" << "\n";
+		std::cout << "Total Ram: " << get_ram_total(get_status()) << "\n";
+		std::cout << "Free Ram: " << get_ram_free(get_status()) << "\n";
+		std::cout << "Used Ram: "<< get_ram_used(get_status()) << "\n";
+		break;
+	case 5:
+		std::cout << "Exiting Now" << "\n";
+		exit(0);
+		break;
 	}
-
 }
 
 void titleMenu() {
@@ -31,12 +43,8 @@ void titleMenu() {
 	selectFunction(choice);
 }
 
-
-
-
 int main()
 {
 	titleMenu();
     return 0;
 }
-
