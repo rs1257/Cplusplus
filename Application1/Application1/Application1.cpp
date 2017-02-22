@@ -9,6 +9,16 @@
 
 #include <iostream>
 
+void selectFunction(int choice) {
+	switch (choice) {
+	case 1:
+		break;
+	case 2:
+		std::cout << 2;
+	}
+
+}
+
 void titleMenu() {
 	int choice;
 	std::cout << 1 << " " <<"File options" << "\n";
@@ -21,16 +31,7 @@ void titleMenu() {
 	selectFunction(choice);
 }
 
-void selectFunction(int choice) {
-	switch (choice) {
-	case 1:
-		break;
-	case 2:
-		std::cout << 2;
-	}
-	
-	
-}
+
 
 
 int main()
