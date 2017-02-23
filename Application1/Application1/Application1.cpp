@@ -19,6 +19,7 @@ void selectFunction(int choice) {
 		std::cout << "Registry Options" << "\n";
 		break;
 	case 4:
+		system("systeminfo > c:\tmp.txt");
 		std::cout << "Resource Options" << "\n";
 		std::cout << "Total Ram: " << get_ram_total(get_status()) << "\n";
 		std::cout << "Free Ram: " << get_ram_free(get_status()) << "\n";

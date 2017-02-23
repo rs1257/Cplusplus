@@ -1,0 +1,54 @@
+
+Host Name:                 RYAN
+OS Name:                   Microsoft Windows 10 Home
+OS Version:                10.0.14393 N/A Build 14393
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          destructosaur300@gmail.com
+Registered Organization:   
+Product ID:                00326-10000-00000-AA862
+Original Install Date:     13/08/2016, 23:47:38
+System Boot Time:          23/02/2017, 19:11:07
+System Manufacturer:       TOSHIBA
+System Model:              SATELLITE PRO C50-A-1K9
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 58 Stepping 9 GenuineIntel ~2601 Mhz
+BIOS Version:              Insyde Corp. 1.40, 22/04/2014
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-gb;English (United Kingdom)
+Input Locale:              en-gb;English (United Kingdom)
+Time Zone:                 (UTC+00:00) Dublin, Edinburgh, Lisbon, London
+Total Physical Memory:     16,259 MB
+Available Physical Memory: 10,892 MB
+Virtual Memory: Max Size:  18,691 MB
+Virtual Memory: Available: 12,820 MB
+Virtual Memory: In Use:    5,871 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\RYAN
+Hotfix(s):                 7 Hotfix(s) Installed.
+                           [01]: KB3176936
+                           [02]: KB3199209
+                           [03]: KB3199986
+                           [04]: KB3211320
+                           [05]: KB3214628
+                           [06]: KB4010250
+                           [07]: KB3213986
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Atheros AR946x Wireless Network Adapter
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.0.1
+                                 IP address(es)
+                                 [01]: 192.168.0.13
+                           [02]: Qualcomm Atheros AR8171/8175 PCI-E Gigabit Ethernet Controller (NDIS 6.30)
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes

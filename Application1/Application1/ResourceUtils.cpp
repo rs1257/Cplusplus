@@ -23,11 +23,7 @@ DWORDLONG get_ram_total(MEMORYSTATUSEX status) {
 	return status.ullTotalPhys / DIV;
 }
 
-//int get_hard_faults() { return 0; }
 
-//int get_cpu_used() { return 0; }
 
-//int get_cpu_free() { return 0; }
 
-//int get_cpu_total() { return 0; }
 
