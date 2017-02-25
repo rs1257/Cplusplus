@@ -1,0 +1,7 @@
+﻿  Practice.cpp
+c:\users\destr\onedrive\documents\github\cplusplus\practice\practice\practice\practice.cpp(16): warning C4018: '<': signed/unsigned mismatch
+c:\users\destr\onedrive\documents\github\cplusplus\practice\practice\practice\practice.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\destr\onedrive\documents\github\cplusplus\practice\practice\practice\practice.cpp(37): warning C4018: '<': signed/unsigned mismatch
+  Main.cpp
+  Generating Code...
+  Practice.vcxproj -> C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Practice\Practice\Debug\Practice.exe
