@@ -1,5 +1,5 @@
-#include "../Game/Main.cpp"
 #include "CppUnitTest.h"
+#include "../Game/Main.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

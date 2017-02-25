@@ -1,7 +1,7 @@
 #include <String>
 #include <vector>
 #include <iostream>
-#include "Armor.cpp"
+#include "Entity.h"
 
 int main() {
 	return 0;

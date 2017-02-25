@@ -1,2 +1,6 @@
-﻿     Creating library C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.lib and object C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.exp
-  Game_Test.vcxproj -> C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.exe
+﻿  UnitTest1.cpp
+     Creating library C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.lib and object C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.exp
+UnitTest1.obj : error LNK2019: unresolved external symbol "public: __thiscall Entity::Entity(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int,int,int,int)" (??0Entity@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHHHH@Z) referenced in function _main
+UnitTest1.obj : error LNK2019: unresolved external symbol "public: __thiscall Entity::Entity(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Entity@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
+UnitTest1.obj : error LNK2019: unresolved external symbol "public: int __thiscall Entity::get_ID(void)" (?get_ID@Entity@@QAEHXZ) referenced in function _main
+C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game_Test.exe : fatal error LNK1120: 3 unresolved externals
