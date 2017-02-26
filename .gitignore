@@ -1,2 +1,4 @@
 Game\.vs\*
 Game\Debug\*
+Game\Game.VC.db
+Game\Game.VC.VC.opendb
