@@ -1,7 +1,12 @@
 #vs tmp
+*.idb
+*.pdb
+*.ilk
 *.db
 *.opendb
 *.suo
+*.tlog
+*.log
 
 # Prerequisites
 *.d
