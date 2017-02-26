@@ -1,12 +1,7 @@
-Game\.vs\*
-Game\Debug\*
-Game\Game.VC.db
-Game\Game.VC.VC.opendb
-
 #vs tmp
-.db
-.opendb
-.suo
+*.db
+*.opendb
+*.suo
 
 # Prerequisites
 *.d
