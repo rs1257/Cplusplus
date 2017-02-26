@@ -1,5 +1,14 @@
-﻿  Entity.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
+﻿  World.cpp
+  Weapon.cpp
+  Status.cpp
+  Skills.cpp
+  Race.cpp
+  Quests.cpp
+  Mechanics.cpp
   Main.cpp
+  Material.cpp
+  Items.cpp
+  Entity.cpp
+  Armor.cpp
+  Generating Code...
   Game.vcxproj -> C:\Users\destr\OneDrive\Documents\GitHub\Cplusplus\Game\Debug\Game.exe
