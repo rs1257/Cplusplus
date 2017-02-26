@@ -147,15 +147,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="EffectEvaluator.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Items.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mechanics.cpp" />
     <ClCompile Include="Quests.cpp" />
-    <ClCompile Include="Race.cpp" />
+    <ClCompile Include="SkillEvaluator.cpp" />
     <ClCompile Include="Skills.cpp" />
     <ClCompile Include="Status.cpp" />
+    <ClCompile Include="StatusEvaluator.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -166,11 +168,13 @@
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mechanics.h" />
     <ClInclude Include="Quests.h" />
-    <ClInclude Include="Race.h" />
     <ClInclude Include="Skills.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
