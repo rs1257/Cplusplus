@@ -1,10 +1,10 @@
-//#include "FileUtils.h"
-//#include "FolderUtils.h"
-//#include "RegistryUtils.h"
+#include "FileUtils.h"
+#include "FolderUtils.h"
+#include "RegistryUtils.h"
 #include "ResourceUtils.h"
 
 #include <iostream>
-#include <Windows.h>
+#include <windows.h>
 
 void selectFunction(int choice) {
 	switch (choice) {
