@@ -8,6 +8,9 @@
 *.suo
 *.tlog
 *.log
+*.ipch
+*.db-wal
+*.db-shm
 
 # Prerequisites
 *.d
