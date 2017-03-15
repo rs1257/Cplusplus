@@ -1,11 +1,10 @@
-#include "stdafx.h"
 //#include "FileUtils.h"
 //#include "FolderUtils.h"
 //#include "RegistryUtils.h"
 #include "ResourceUtils.h"
 
 #include <iostream>
-#include <windows.h>
+#include <Windows.h>
 
 void selectFunction(int choice) {
 	switch (choice) {
@@ -19,7 +18,7 @@ void selectFunction(int choice) {
 		std::cout << "Registry Options" << "\n";
 		break;
 	case 4:
-		system("systeminfo > c:\tmp.txt");
+		//system("systeminfo > c:\tmp.txt");
 		std::cout << "Resource Options" << "\n";
 		std::cout << "Total Ram: " << get_ram_total(get_status()) << "\n";
 		std::cout << "Free Ram: " << get_ram_free(get_status()) << "\n";
@@ -27,7 +26,7 @@ void selectFunction(int choice) {
 		break;
 	case 5:
 		std::cout << "Exiting Now" << "\n";
-		exit(0);
+		//exit(0);
 		break;
 	}
 }
