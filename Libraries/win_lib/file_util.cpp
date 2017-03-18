@@ -1,26 +1,45 @@
 #include "file_util.h"
 #include "path_util.h"
+#include <sys/stat.h>
+#include <fstream>
+#include <windows.h>
 
 #include <iostream>
 #include <stdio.h>
 
+//learn to use windows api and use wide string .etc 
 namespace file {
-	//need does file exist
-	bool remove(std::string file_path, std::string file_name) {
-		const std::string file = path::join(file_path, file_name);
-		if (std::remove(file.c_str()) != 0) {
-			std::cout << "Remove operation failed" << std::endl;
-			return false;
-		}
-		std::cout << file << " has been removed." << std::endl;
-		return true;
+
+	bool exists(const std::string &file_name) {
+		struct stat buffer;
+		return (stat(file_name.c_str(), &buffer) == 0);
 	}
 
-	void move(std::wstring file_src, std::wstring file_des) {}
+	void create(const std::string &file_path) {
+		std::ofstream outputFile(file_path);
+	}
 
-	void open(std::wstring file_path) {}
+	void remove(const std::string &file_name) {
+		if (!file::exists) {
+			std::cout << "File doesn't exist" << "\n";
+		}
+		else if (std::remove(file_name.c_str()) != 0) {
+			std::cout << "Remove operation failed" << "\n";
+		}
+		else {
+			std::cout << file_name << " has been removed." << "\n";
+		}
+	}
 
-	void write(std::wstring file_path, std::wstring contents) {}
-
-	void create(std::wstring file_path) {}
+	void move(const std::string &file_name_src, const std::string &file_name_des) {
+		if (!file::exists) {
+			std::cout << "File doesn't exist" << "\n";
+		}
+		else if (std::rename(file_name_src.c_str(), file_name_des.c_str()) != 0) {
+			std::cout << "Move operation failed" << "\n";
+		}
+		else {
+			std::cout << file_name_src << " has been moved to " << file_name_des << "\n";
+		}
+	}	
 }

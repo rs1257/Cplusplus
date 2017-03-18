@@ -1,11 +1,13 @@
 #pragma once
 
-//Downloads
+#include <string>
 
-//Desktop 
+namespace folder {
+	bool exists(const std::string &folder_name);
 
-//system32
+	void create(const std::string &folder_name);
 
-//programdata
+	void remove(const std::string &folder_name);
 
-//program files
+	void move(const std::string &folder_src, const std::string &folder_des);
+}
