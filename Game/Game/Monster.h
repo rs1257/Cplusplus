@@ -5,10 +5,10 @@
 #include <string>
 
 class Monster : public Entity {
-public:
+private:
 	static int id_count;
 	int id_;
-
+public:
 	Monster(std::string name, int attack, int health, int defense, int speed);
 
 	int get_id();

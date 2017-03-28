@@ -151,35 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Armor.cpp" />
-    <ClCompile Include="EffectEvaluator.cpp" />
-    <ClCompile Include="Items.cpp" />
-    <ClCompile Include="Material.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Mechanics.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Quests.cpp" />
-    <ClCompile Include="SkillEvaluator.cpp" />
-    <ClCompile Include="Skills.cpp" />
-    <ClCompile Include="Status.cpp" />
-    <ClCompile Include="StatusEvaluator.cpp" />
-    <ClCompile Include="Weapon.cpp" />
-    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Armor.h" />
     <ClInclude Include="EntityInterface.h" />
-    <ClInclude Include="Items.h" />
-    <ClInclude Include="Material.h" />
-    <ClInclude Include="Mechanics.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Quests.h" />
-    <ClInclude Include="Skills.h" />
-    <ClInclude Include="Status.h" />
-    <ClInclude Include="Weapon.h" />
-    <ClInclude Include="World.h" />
+    <ClInclude Include="Structs.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="TODO.txt" />
