@@ -7,21 +7,25 @@
 class Player: public Entity {
 private:
 	int money_;
-	int x_;
-	int y_;
+	float x_;
+	float y_;
 public:
-	Player(std::string name, int attack, int health, int defense, int speed, int money, int x, int y);
+	Player(std::string name, int attack, int health, int defense, int speed, int money, float x, float y);
 
 	int get_money();
 	void set_money(int money);
 
-	int get_x();
-	void set_x(int x);
-	int get_y();
-	void set_y(int y);
+	float get_x();
+	void set_x(float x);
+	float get_y();
+	void set_y(float y);
 
-	void move_up();
-	void move_down();
-	void move_left();
-	void move_right();
+	void move_up(float pixels);
+	void move_down(float pixels);
+	void move_left(float pixels);
+	void move_right(float pixels);
+	void move_left_up(float pixels);
+	void move_left_down(float pixels);
+	void move_right_up(float pixels);
+	void move_right_down(float pixels);
 };

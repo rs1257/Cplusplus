@@ -156,8 +156,11 @@
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dialogue.h" />
     <ClInclude Include="EntityInterface.h" />
+    <ClInclude Include="Instances.h" />
     <ClInclude Include="Monster.h" />
+    <ClInclude Include="Movement.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Structs.h" />
   </ItemGroup>
