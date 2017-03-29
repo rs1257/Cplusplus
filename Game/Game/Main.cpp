@@ -44,6 +44,7 @@ int main() {
 	//std::cout << player.get_name() << "\n";
 	
 	sf::RenderWindow window(sf::VideoMode(500, 500), "SFML works!");
+	window.setActive(true);
 	window.setFramerateLimit(30);
 	//sf::CircleShape shape(100.f);
 	sf::RectangleShape shape(sf::Vector2f(50, 50));
@@ -51,6 +52,11 @@ int main() {
 
 	while (window.isOpen())
 	{
+		if (event.type == sf::Event::LostFocus)
+    			window.pause();
+
+		if (event.type == sf::Event::GainedFocus)
+   			 window.resume();
 		
 		sf::Event event;
 		while (window.pollEvent(event))
