@@ -5,7 +5,7 @@
 Player::Player(std::string name, int attack, int health, int defense, int speed, int money, float x, float y) {
 	Player::name_ = name;
 	Player::attack_ = attack;
-	Player::health_ = health;
+	Player::max_health_ = health;
 	Player::defense_ = defense;
 	Player::speed_ = speed;
 	Player::money_ = money;
@@ -15,11 +15,6 @@ Player::Player(std::string name, int attack, int health, int defense, int speed,
 
 int Player::get_money() { return money_; }
 void Player::set_money(int money) { money_ = money; }
-
-float Player::get_x() { return x_; }
-void Player::set_x(float x) { x_ = x; }
-float Player::get_y() { return y_; }
-void Player::set_y(float y) { y_ = y; }
 
 void Player::move_up(float pixels) {
 	if (y_ <= 0) 
