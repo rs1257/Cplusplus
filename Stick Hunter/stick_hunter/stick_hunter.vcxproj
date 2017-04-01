@@ -158,7 +158,11 @@
     <ClInclude Include="ui.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\SkyDrive\Pictures\Screenshots\2017-03-10.png" />
+    <Image Include="images\button_texture.jpg" />
+    <Image Include="images\title_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="font\Atarian\SF Atarian System.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

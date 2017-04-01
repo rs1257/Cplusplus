@@ -28,8 +28,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\SkyDrive\Pictures\Screenshots\2017-03-10.png">
+    <Image Include="images\button_texture.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="images\title_background.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="font\Atarian\SF Atarian System.ttf" />
   </ItemGroup>
 </Project>
