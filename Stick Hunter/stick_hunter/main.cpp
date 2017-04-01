@@ -32,10 +32,12 @@ int main() {
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+			
 		}
 
 		window.clear(sf::Color(100,100,100,255));
 		window.draw(background);
+
 		create_button(window, screen_resolution[0]/2, 100, "New Game", font);
 		create_button(window, screen_resolution[0] / 2, 200, "Continue Game", font);
 		create_button(window, screen_resolution[0] / 2, 300, "Options", font);

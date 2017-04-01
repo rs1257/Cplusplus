@@ -35,16 +35,13 @@ void main_menu(sf::RenderWindow & window){
 
 void create_button(sf::RenderWindow & window, float pos_x, float pos_y, std::string text, sf::Font font) {
 	float length = 300;
-
-
-	
 	sf::RectangleShape button(sf::Vector2f(length, 80));
 	sf::Texture texture;
-	texture.loadFromFile("images\\button_texture.jpg");
-	button.setTexture(& texture);
+	//texture.loadFromFile("images\\button_texture.jpg");
+	//button.setTexture(& texture);
 	button.setPosition(pos_x - (length / 2), pos_y);
-	button.setOutlineColor(sf::Color(sf::Color::Black));
-	button.setOutlineThickness(2);
+	//button.setOutlineColor(sf::Color(sf::Color::Black));
+	//button.setOutlineThickness(2);
 	
 	sf::Text button_text;
 	button_text.setFont(font);
@@ -54,10 +51,37 @@ void create_button(sf::RenderWindow & window, float pos_x, float pos_y, std::str
 	button_text.setColor(sf::Color::Black);
 	//window.draw(button);
 	window.draw(button_text);
+	//start in new thread?
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)
+			&& sf::Mouse::getPosition(window).x >= button.getPosition().x
+			&& sf::Mouse::getPosition(window).x <= button.getPosition().x + button.getSize().x
+			&& sf::Mouse::getPosition(window).y >= button.getPosition().y
+			&& sf::Mouse::getPosition(window).y <= button.getPosition().y + button.getSize().y) {
+			std::cout << text << "\n"; //for debugging
+			if (text == "New Game") {
+				new_game();
+			}
+			else if (text == "Continue Game") {
+				continue_game();
+			}
+			else if (text == "Options") {
+				options();
+			}
+			else if (text == "Exit") {
+				std::cout << "Exiting\n";
+				window.close();
+			}
+	}
 }
-void new_game() {}
-void continue_game() {}
-void options() {}
+void new_game() {
+	std::cout << "New Game being called\n";
+}
+void continue_game() {
+	std::cout << "Continue Game being called\n";
+}
+void options() {
+	std::cout << "Options being called\n";
+}
 
 void volume_settings() {}
 void resolution_settings() {}
