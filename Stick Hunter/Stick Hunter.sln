@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stick_hunter", "stick_hunter\stick_hunter.vcxproj", "{A1857887-638C-46A2-8763-C31555386970}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823} = {75B4E9B2-7DA3-4A61-985B-846841CE2823}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stick_hunter_tests", "stick_hunter_tests\stick_hunter_tests.vcxproj", "{75B4E9B2-7DA3-4A61-985B-846841CE2823}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTest", "packages\GoogleTest\GoogleTest.vcxproj", "{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stick_hunter_lib", "stick_hunter_lib\stick_hunter_lib.vcxproj", "{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1857887-638C-46A2-8763-C31555386970}.Debug|x64.ActiveCfg = Debug|x64
+		{A1857887-638C-46A2-8763-C31555386970}.Debug|x64.Build.0 = Debug|x64
+		{A1857887-638C-46A2-8763-C31555386970}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1857887-638C-46A2-8763-C31555386970}.Debug|x86.Build.0 = Debug|Win32
+		{A1857887-638C-46A2-8763-C31555386970}.Release|x64.ActiveCfg = Release|x64
+		{A1857887-638C-46A2-8763-C31555386970}.Release|x64.Build.0 = Release|x64
+		{A1857887-638C-46A2-8763-C31555386970}.Release|x86.ActiveCfg = Release|Win32
+		{A1857887-638C-46A2-8763-C31555386970}.Release|x86.Build.0 = Release|Win32
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Debug|x64.ActiveCfg = Debug|x64
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Debug|x64.Build.0 = Debug|x64
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Debug|x86.ActiveCfg = Debug|Win32
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Debug|x86.Build.0 = Debug|Win32
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Release|x64.ActiveCfg = Release|x64
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Release|x64.Build.0 = Release|x64
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Release|x86.ActiveCfg = Release|Win32
+		{75B4E9B2-7DA3-4A61-985B-846841CE2823}.Release|x86.Build.0 = Release|Win32
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Debug|x64.ActiveCfg = Debug|x64
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Debug|x64.Build.0 = Debug|x64
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Debug|x86.Build.0 = Debug|Win32
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Release|x64.ActiveCfg = Release|x64
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Release|x64.Build.0 = Release|x64
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Release|x86.ActiveCfg = Release|Win32
+		{DEC35DB5-E18E-4625-814B-EAB7B8E35A24}.Release|x86.Build.0 = Release|Win32
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Debug|x64.ActiveCfg = Debug|x64
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Debug|x64.Build.0 = Debug|x64
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Debug|x86.Build.0 = Debug|Win32
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Release|x64.ActiveCfg = Release|x64
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Release|x64.Build.0 = Release|x64
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Release|x86.ActiveCfg = Release|Win32
+		{305BB57E-BA6E-4DCA-88A1-1B96D86B78DA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
