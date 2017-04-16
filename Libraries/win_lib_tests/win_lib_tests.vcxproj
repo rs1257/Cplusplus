@@ -149,7 +149,6 @@
     <ClCompile Include="folder_util_tests.cpp" />
     <ClCompile Include="path_util_tests.cpp" />
     <ClCompile Include="registry_util_tests.cpp" />
-    <ClCompile Include="run_tests.cpp" />
     <ClCompile Include="system_util_tests.cpp" />
   </ItemGroup>
   <ItemGroup>

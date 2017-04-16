@@ -1,9 +1,11 @@
 #pragma once
+#include <string>
 
-//systeminfo
+namespace Systeminfo {
+	//systeminfo
 
-//os version
+	//only windows 7 and above
+	std::string get_os_version();
 
-//bit version
-
-
+	bool is_64();
+} //namespace System

@@ -1,6 +1,6 @@
 #include "path_util.h"
 
-namespace path {
+namespace Path {
 
 	std::string join(std::string file_path, std::string file_name) {
 		return file_path + "\\" + file_name;
@@ -15,4 +15,4 @@ namespace path {
 	//programdata
 
 	//program files
-}
+} //namespace Path

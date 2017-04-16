@@ -7,8 +7,8 @@
 #include <iostream>
 #include <stdio.h>
 
-//learn to use windows api and use wide string .etc 
-namespace file {
+//add windows api overloads
+namespace File {
 
 	bool exists(const std::string &file_name) {
 		struct stat buffer;
@@ -20,7 +20,7 @@ namespace file {
 	}
 
 	void remove(const std::string &file_name) {
-		if (!file::exists) {
+		if (!File::exists(file_name)) {
 			std::cout << "File doesn't exist" << "\n";
 		}
 		else if (std::remove(file_name.c_str()) != 0) {
@@ -32,7 +32,7 @@ namespace file {
 	}
 
 	void move(const std::string &file_name_src, const std::string &file_name_des) {
-		if (!file::exists) {
+		if (!File::exists(file_name_src)) {
 			std::cout << "File doesn't exist" << "\n";
 		}
 		else if (std::rename(file_name_src.c_str(), file_name_des.c_str()) != 0) {
@@ -42,4 +42,4 @@ namespace file {
 			std::cout << file_name_src << " has been moved to " << file_name_des << "\n";
 		}
 	}	
-}
+}  //namespace File

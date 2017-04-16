@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <iostream>
 
-namespace folder {
+namespace Folder {
 	struct stat info;
 
 	bool exists(const std::string &folder_name) {
@@ -45,4 +45,4 @@ namespace folder {
 			std::cout << folder_src << " has been moved to " << folder_des << "\n";
 		}
 	}
-}
+}  //namespace Folder
