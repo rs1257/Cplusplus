@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="{3545A79B-CB34-435D-9404-8497AFDCC5E0}" Name="Installer" Language="1033" Version="1.0.0.0" Manufacturer="Ryan" UpgradeCode="bdb27d80-944d-4aee-8ae2-07135ac07386">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+    
+    <?define ExeSourcePath = "C:\Users\Ryan\Documents\GitHub\Cplusplus\MyProgram\MyProgram\Debug" ?>
+    
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes"/>
+
+		<Feature Id="ProductFeature" Title="Installer" Level="1">
+      <ComponentRef Id="ProgramExe"/>
+      <ComponentRef Id="DesktopShortcut"/>
+		</Feature>
+    
+    <Property Id="INSTALLDESKTOPSHORTCUT" Value="1" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR"/>
+    <UIRef Id="WixUI_Mondo" /> <!-- WixUI_InstallDir i want to work but mondo works -->
+    
+  </Product>
+
+  <Fragment>
+    <UI>
+      <Dialog Id="Installer" Width="370" Height="270" Title="Installer">
+        <Control Id="Finish" Type="PushButton" X="236" Y="243" Width="56" Height="17" Default="yes" Cancel="yes" Text="!(loc.WixUIFinish)" />
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Disabled="yes" Text="!(loc.WixUICancel)" />
+        <Control Id="Bitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="234" TabSkip="no" Text="!(loc.ExitDialogBitmap)" />
+        <Control Id="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Disabled="yes" Text="!(loc.WixUIBack)" />
+        <Control Id="BottomLine" Type="Line" X="0" Y="234" Width="370" Height="0" />
+        <Control Id="Description" Type="Text" X="135" Y="70" Width="220" Height="20" Transparent="yes" NoPrefix="yes" Text="!(loc.ExitDialogDescription)" />
+        <Control Id="Title" Type="Text" X="135" Y="20" Width="220" Height="60" Transparent="yes" NoPrefix="yes" Text="!(loc.ExitDialogTitle)" />
+        <Control Id="OptionalText" Type="Text" X="135" Y="100" Width="220" Height="80" Transparent="yes" NoPrefix="yes" Hidden="yes" Text="[WIXUI_EXITDIALOGOPTIONALTEXT]">
+          <Condition Action="show">WIXUI_EXITDIALOGOPTIONALTEXT AND NOT Installed</Condition>
+        </Control>
+        <Control Id="OptionalCheckBox" Type="CheckBox" X="135" Y="190" Width="220" Height="40" Hidden="no" Property="WIXUI_EXITDIALOGOPTIONALCHECKBOX" CheckBoxValue="1" Text="[WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT]">
+          <Condition Action="show">WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT AND NOT Installed</Condition>
+        </Control>
+        <Control Id="LaunchCheckBox" Type="CheckBox" X="10" Y="243" Width="170" Height="17" Property="LAUNCHAPPONEXIT" Hidden="yes" CheckBoxValue="1" Text="Launch Sample App 1.0 when setup exits.">
+          <Condition Action="show">NOT Installed</Condition>
+        </Control>
+      </Dialog>
+
+      <InstallUISequence>
+        <Show Dialog="BrowseDlg" OnExit="success" />
+        <Show Dialog="Installer" OnExit="success" />
+      </InstallUISequence>
+
+      <AdminUISequence>
+        <Show Dialog="Installer" OnExit="success" />
+      </AdminUISequence>
+    </UI>
+  </Fragment>
+
+  
+	<Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+
+      <Directory Id="DesktopFolder" Name="Desktop">
+        <Component Id="DesktopShortcut" Guid="{6866ECB8-49CF-4526-A52E-11F509491614}">
+          <Condition>INSTALLDESKTOPSHORTCUT</Condition>
+          <RegistryKey Root="HKCU" Key="MyProgram" ForceCreateOnInstall="yes" ForceDeleteOnUninstall="yes">
+            <RegistryValue Name="AnyValueName" Value="1" Type="integer" KeyPath="yes"/>
+          </RegistryKey>
+          <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="MyProgram" ShortName="MP" Target="[ProgramExe]"/>
+        </Component>
+      </Directory>
+      
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Installer">
+          <Component Id="ProgramExe" Guid="{48D1184A-2DA8-49ED-A30B-D6FD5578F09A}">
+            <File Source="$(var.ExeSourcePath)\MyProgram.exe" Id="ProgramExe" KeyPath="yes" />
+            <RemoveFile Id="PurgeInstallerFolder" Name="*.*" On="uninstall" />
+          </Component>
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+</Wix>
+
