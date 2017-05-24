@@ -134,9 +134,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\gtest-1.7.0\src\gtest-all.cc" />
     <ClCompile Include="..\gtest-1.7.0\src\gtest_main.cc" />
   </ItemGroup>

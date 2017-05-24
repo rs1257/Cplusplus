@@ -155,6 +155,7 @@
   <ItemGroup>
     <Image Include="dino_app.ico" />
     <Image Include="dino_icon.ico" />
+    <Image Include="dino_sys_tray.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
